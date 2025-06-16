@@ -2,7 +2,6 @@ app:
     name: grafana
     code: Grafana
     notify: asunil@ecloudcontrol.com
-
     
 build:
     version: 7.0
@@ -34,10 +33,10 @@ properties:
     GF_AUTH_GENERIC_OAUTH_CLIENT_SECRET: 
       vault: GF_AUTH_GENERIC_OAUTH_CLIENT_SECRET
     GF_AUTH_GENERIC_OAUTH_SCOPES: openid profile email  
-    GF_AUTH_GENERIC_OAUTH_AUTH_URL: https://appz-athuls.lowtouchcloud.io/openid/authorize 
+    GF_AUTH_GENERIC_OAUTH_AUTH_URL: https://appz-athuls.lowtouchcloud.io//openid/authorize 
     GF_AUTH_GENERIC_OAUTH_TOKEN_URL: https://appz-athuls.lowtouchcloud.io/openid/token 
-    GF_AUTH_GENERIC_OAUTH_API_URL: https://appz-athuls.lowtouchcloud.io//openid/userinfo 
+    GF_AUTH_GENERIC_OAUTH_API_URL: https://appz-athuls.lowtouchcloud.io/openid/userinfo 
     GF_AUTH_GENERIC_OAUTH_NAME_ATTRIBUTE_PATH: anyname
     GF_AUTH_GENERIC_OAUTH_ROLE_ATTRIBUTE_PATH: contains(roles[*], 'admin') && 'Admin' || 'Viewer'
-    GF_SERVER_ROOT_URL: https://athuls-dev-grafana-7-0.lowtouchcloud.io
-    revision: 3
+    GF_SERVER_ROOT_URL: https://athuls-dev-grafana-7-0.lowtouchcloud.io/
+    revision: 0
